@@ -1,0 +1,441 @@
+body {
+    background-color: #eaeaea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.layout-positioner {
+    padding: 0 15px;
+    max-width: 1170px;  
+    margin: 0 auto; 
+    position: relative;
+}
+
+.layout-centr {
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 39px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.menu-18px {
+    font-size: 18px;
+    justify-content: center;
+    margin-bottom: 65px;
+}
+
+.menu>li {
+    padding-left: 21px;
+    margin-left: 22px;
+    position: relative;
+}
+
+.menu>li:first-child {
+    padding-left: 0;
+    margin-left: 0;    
+}
+
+.menu>li::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 15px;
+    background-color: #494949;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.menu>li:first-child::before {
+    display: none;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    color: #494949;
+    padding-bottom: 18px;
+}
+
+.menu>li>a:hover {
+    border-bottom: 4px solid #ee252d;
+    position: relative;
+}
+
+.menu>li>a:hover:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ee252d;
+}
+
+.baner {
+    background-image: url(../image/baner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding-top: 215px;
+    padding-bottom: 285px;
+}
+
+.pizza-img {
+    position: absolute;
+    right: -15px;
+    top: -199px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.discription {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 575px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 23px;
+    margin-top: 0px;
+    word-spacing: 2px;
+}
+
+.btn {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    padding: 12px 0px;
+    max-width: 184px;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px 0px #ffffff;
+    text-shadow:0px 0px 10px #ffffff;
+}
+
+.h2 {
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #282828;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-right: 124px;
+    padding-left: 123px;
+    margin-bottom: 10px;
+    margin-right: 23px;
+}
+
+.h2::before, 
+.h2::after {
+    content: '';
+    position: absolute;
+    background-image: url(../image/Shape.png);
+    display: block;
+    width: 102px;
+    height: 28px;
+    top: calc(50% - 14px);
+}
+
+.h2::before {
+    left: 0;
+}
+
+.h2::after {
+    right: 0;
+}
+
+.h2 + p {
+    font-size: 20px;
+    color: #959595;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.4px;
+    word-spacing: -1.4px;
+    margin: 0;
+    margin-bottom: 39px;
+}
+
+.box {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+.box-itm {
+    padding: 56px 30px 11px 44px;
+    box-sizing: content-box;
+    margin-right: 0px;
+    width: 305px;
+}
+
+
+.number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 122px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #282828;
+}
+
+.number::after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.number-one::after {
+    background-image: url(../image/icon-pizza.png);
+    width: 126px;
+    height: 71px;
+    top: calc(50% - 38px);
+    left: 77px;
+}
+
+.number-two::after {
+    background-image: url(../image/icon-medal.png);
+    width: 184px;
+    height: 81px;
+    top: calc(50% - 40px);
+    left: 88px;
+}
+
+.number-three::after {
+    background-image: url(../image/icon-sn.png);
+    width: 142px;
+    height: 68px;
+    top: calc(50% - 34px);
+    left: 94px;
+}
+
+.box-text {
+    border-right: 1px solid #eaeaea;
+    padding-right: 23px;
+}
+
+.box-itm:last-child .box-text {
+    border-right: none;
+}
+
+.box-text h3 {
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #282828;
+    margin-bottom: 8px;
+    margin-top: 14px;
+    margin-left: 4px;
+}
+
+.box-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: #282828;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+.btn-start {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    background-image: url(../image/button-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 29px 58px;    
+}
+
+.btn-start:hover {
+    text-shadow:0px 0px 10px #ffffff;
+}
+
+.main {
+    padding-top: 76px;
+    padding-bottom: 109px;
+}
+
+.footer {
+    background-image: url(../image/footer-bg.png);
+    background-position: center center;
+    padding: 28px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    word-spacing: 0px;
+    letter-spacing: 2.4px;
+    font-size: 16px;
+    padding-left: 2px;
+}
+
+@media (max-width: 1200px) {
+    .pizza-img {
+        display: none;
+    }
+    .baner {
+        padding-top: 70px;
+        padding-bottom: 90px;
+        text-align: center;
+    }
+    .discription {
+        margin: 0 auto;
+        margin-bottom: 23px;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    .main {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .box {
+        flex-direction: column;
+        padding-bottom: 10px;
+        margin-bottom: 65px;
+    }
+    .box-itm {
+        display: flex;
+        width: auto;
+        padding: 13px 30px 11px 44px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .box-itm:last-child {
+        border-bottom: none;
+    }
+    .box-text {
+        border-right: none;
+        padding-right: 0;
+        margin-left: 213px;
+    }
+    .box-text h3 {
+        font-size: 35px;
+    }
+    .box-text p {
+        margin-bottom: 0px;
+    }
+}   @media (max-width: 800px) {
+        .navigation {
+            flex-direction: column;
+        }
+        .h2 {
+            font-size: 35px;
+        }
+        @media (max-width: 700px) {
+            .main {
+                padding-bottom: 15px;
+            }
+            .layout-positioner {
+                padding: 0 5px;
+            }
+            .navigation {
+                padding-top: 15px;
+                padding-bottom: 10px;
+            }
+            .menu {
+                font-size: 10px;
+                margin-top: 20px;
+            }
+            .menu-18px {
+                margin-bottom: 25px;
+            }
+            .menu>li {
+                padding-left: 6px;
+                margin-left: 4px;
+            }
+            .menu>li>a {
+                padding-bottom: 8px;
+            }
+            .menu>li::before {
+                width: 2px;
+                height: 14px;
+                top: 0px;
+            }
+            .baner {
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+            h1 {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            .discription {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            .h2 {
+                font-size: 25px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-right: 0;
+            }
+            .h2::before,
+            .h2::after {
+                display: none;
+            }
+            .h2 + p {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            .box {
+                padding-bottom: 0px;
+                margin-bottom: 30px;
+            }
+            .number {
+                font-size: 100px;
+            }
+            .number::after {
+                display: none;
+            }
+            .box-text {
+                margin-left: 10px;
+            }
+            .box-text h3 {
+                font-size: 22px;
+                margin-bottom: 0px;
+            }
+            .box-text p {
+                font-size: 14px;
+            }
+            .btn-start {
+                background-size: cover;
+                padding: 17px 32px;
+                font-size: 18px;
+            }
+            .footer {
+                padding: 5px 0;
+                font-size: 6px;
+            }
+        }
+    }
